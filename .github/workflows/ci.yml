@@ -1,4 +1,4 @@
-name: Continuous Integration Workflow
+name: CI Workflow
 on: [push]
 jobs:
   call_Continuous_Integration_Workflow:
