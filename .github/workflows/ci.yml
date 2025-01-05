@@ -1,7 +1,7 @@
 name: Continuous Integration Workflow
 on: [push]
 jobs:
-  Continuous_Integration_Workflow:
-    runs-on: ubuntu-latest
+  call_Continuous_Integration_Workflow:
+    uses: Dhwarakesh95/Devops-Stage-1/github-workflows/.github/workflows/reusable-workflows.yml@main
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
