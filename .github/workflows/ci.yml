@@ -5,4 +5,6 @@ jobs:
     uses: Devops-Stage-1/github-workflows/.github/workflows/reusable-workflows.yml@main
     with:
       project-key: expense-backend
+    secrets:
+      vault_token: ${{ secrets.vault_token }}
 #test
