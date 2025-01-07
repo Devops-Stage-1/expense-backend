@@ -8,5 +8,6 @@ jobs:
     uses: Devops-Stage-1/github-workflows/.github/workflows/release-reusable-workflows.yml@main
     with:
       project-key: expense-backend
+      npm_install: true
     secrets:
       vault_token: ${{ secrets.vault_token }}

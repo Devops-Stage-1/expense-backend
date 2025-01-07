@@ -1,5 +1,9 @@
 name: CI_Workflow
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - 'EXP-**'
 jobs:
   call_Continuous_Integration_Workflow:
     uses: Devops-Stage-1/github-workflows/.github/workflows/ci-reusable-workflows.yml@main
