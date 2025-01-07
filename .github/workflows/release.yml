@@ -1,8 +1,11 @@
 name: CI_Workflow
-on: [push]
+on:
+  push:
+    tags:
+      - "*"
 jobs:
   call_Continuous_Integration_Workflow:
-    uses: Devops-Stage-1/github-workflows/.github/workflows/ci-reusable-workflows.yml@main
+    uses: Devops-Stage-1/github-workflows/.github/workflows/release-reusable-workflows.yml@main
     with:
       project-key: expense-backend
     secrets:
