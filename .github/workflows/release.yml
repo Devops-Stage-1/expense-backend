@@ -7,7 +7,8 @@ jobs:
   call_Continuous_Integration_Workflow:
     uses: Devops-Stage-1/github-workflows/.github/workflows/release-reusable-workflows.yml@main
     with:
-      project-key: expense-backend
+      project_name: expense-backend
       npm_install: true
+      release_archieve_file: "*.js package.json schema VERSION node_modules"
     secrets:
       vault_token: ${{ secrets.vault_token }}
