@@ -8,6 +8,6 @@ jobs:
   call_Continuous_Integration_Workflow:
     uses: Devops-Stage-1/github-workflows/.github/workflows/ci-reusable-workflows.yml@main
     with:
-      project-key: expense-backend
+      project-name: expense-backend
     secrets:
       vault_token: ${{ secrets.vault_token }}
